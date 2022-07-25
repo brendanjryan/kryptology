@@ -16,10 +16,10 @@ import (
 	"fmt"
 	"math/big"
 
-	crypto "github.com/coinbase/kryptology/pkg/core"
-	"github.com/coinbase/kryptology/pkg/core/curves"
-	paillier "github.com/coinbase/kryptology/pkg/paillier"
-	"github.com/coinbase/kryptology/pkg/tecdsa/gg20/dealer"
+	crypto "github.com/brendanjryan/kryptology/pkg/core"
+	"github.com/brendanjryan/kryptology/pkg/core/curves"
+	paillier "github.com/brendanjryan/kryptology/pkg/paillier"
+	"github.com/brendanjryan/kryptology/pkg/tecdsa/gg20/dealer"
 )
 
 // PdlProofParams encapsulates the parameters for ProvePDL in

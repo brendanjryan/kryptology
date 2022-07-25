@@ -14,7 +14,7 @@ import (
 	"github.com/btcsuite/btcd/btcec"
 	"github.com/stretchr/testify/require"
 
-	"github.com/coinbase/kryptology/pkg/core/curves"
+	"github.com/brendanjryan/kryptology/pkg/core/curves"
 )
 
 func TestSeedOT(t *testing.T) {

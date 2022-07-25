@@ -16,7 +16,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/coinbase/kryptology/internal"
+	"github.com/brendanjryan/kryptology/internal"
 )
 
 var (

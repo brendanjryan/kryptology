@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/coinbase/kryptology/internal"
-	"github.com/coinbase/kryptology/pkg/core/curves"
-	"github.com/coinbase/kryptology/pkg/paillier"
-	"github.com/coinbase/kryptology/pkg/tecdsa/gg20/dealer"
+	"github.com/brendanjryan/kryptology/internal"
+	"github.com/brendanjryan/kryptology/pkg/core/curves"
+	"github.com/brendanjryan/kryptology/pkg/paillier"
+	"github.com/brendanjryan/kryptology/pkg/tecdsa/gg20/dealer"
 )
 
 // DkgResult is all the data generated from the DKG

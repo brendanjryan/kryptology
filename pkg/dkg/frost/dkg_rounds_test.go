@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/coinbase/kryptology/pkg/core/curves"
-	"github.com/coinbase/kryptology/pkg/sharing"
+	"github.com/brendanjryan/kryptology/pkg/core/curves"
+	"github.com/brendanjryan/kryptology/pkg/sharing"
 )
 
 var (

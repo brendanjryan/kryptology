@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/coinbase/kryptology/pkg/accumulator"
-	"github.com/coinbase/kryptology/pkg/core/curves"
+	"github.com/brendanjryan/kryptology/pkg/accumulator"
+	"github.com/brendanjryan/kryptology/pkg/core/curves"
 )
 
 func main() {

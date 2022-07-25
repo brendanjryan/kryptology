@@ -15,9 +15,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/coinbase/kryptology/pkg/core/curves"
-	"github.com/coinbase/kryptology/pkg/dkg/gennaro"
-	"github.com/coinbase/kryptology/pkg/sharing/v1"
+	"github.com/brendanjryan/kryptology/pkg/core/curves"
+	"github.com/brendanjryan/kryptology/pkg/dkg/gennaro"
+	"github.com/brendanjryan/kryptology/pkg/sharing/v1"
 )
 
 const threshold = 2

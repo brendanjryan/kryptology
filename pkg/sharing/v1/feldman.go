@@ -11,7 +11,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/coinbase/kryptology/pkg/core/curves"
+	"github.com/brendanjryan/kryptology/pkg/core/curves"
 )
 
 // Feldman Verifiable Secret Sharing Scheme

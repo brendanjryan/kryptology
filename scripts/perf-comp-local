@@ -7,7 +7,7 @@ ROOT=$( cd "$(dirname "$0")/.."; pwd )
 TMP_DIR=$(mktemp -d)
 echo "tmp dir: $TMP_DIR"
 
-git clone --depth 1 -b master git@github.com:coinbase/kryptology.git "$TMP_DIR/kryptology"
+git clone --depth 1 -b master git@github.com:brendanjryan/kryptology.git "$TMP_DIR/kryptology"
 cd "$TMP_DIR/kryptology"
 go test -bench=. -short ./... > "$TMP_DIR/current-bench.log"
 

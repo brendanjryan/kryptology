@@ -15,10 +15,10 @@ import (
 	"github.com/gtank/merlin"
 	"github.com/pkg/errors"
 
-	"github.com/coinbase/kryptology/pkg/core/curves"
-	"github.com/coinbase/kryptology/pkg/ot/base/simplest"
-	"github.com/coinbase/kryptology/pkg/ot/extension/kos"
-	"github.com/coinbase/kryptology/pkg/zkp/schnorr"
+	"github.com/brendanjryan/kryptology/pkg/core/curves"
+	"github.com/brendanjryan/kryptology/pkg/ot/base/simplest"
+	"github.com/brendanjryan/kryptology/pkg/ot/extension/kos"
+	"github.com/brendanjryan/kryptology/pkg/zkp/schnorr"
 )
 
 // AliceOutput is the result of running DKG for Alice. It contains both the public and secret values that are needed

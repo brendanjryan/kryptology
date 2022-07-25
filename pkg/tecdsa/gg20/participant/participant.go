@@ -13,12 +13,12 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/coinbase/kryptology/internal"
-	"github.com/coinbase/kryptology/pkg/core"
-	"github.com/coinbase/kryptology/pkg/core/curves"
-	"github.com/coinbase/kryptology/pkg/paillier"
-	"github.com/coinbase/kryptology/pkg/sharing/v1"
-	"github.com/coinbase/kryptology/pkg/tecdsa/gg20/dealer"
+	"github.com/brendanjryan/kryptology/internal"
+	"github.com/brendanjryan/kryptology/pkg/core"
+	"github.com/brendanjryan/kryptology/pkg/core/curves"
+	"github.com/brendanjryan/kryptology/pkg/paillier"
+	"github.com/brendanjryan/kryptology/pkg/sharing/v1"
+	"github.com/brendanjryan/kryptology/pkg/tecdsa/gg20/dealer"
 )
 
 // Participant is a tECDSA player that receives information from a trusted dealer

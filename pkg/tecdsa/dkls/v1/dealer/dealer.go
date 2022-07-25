@@ -15,10 +15,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/coinbase/kryptology/pkg/core/curves"
-	"github.com/coinbase/kryptology/pkg/ot/base/simplest"
-	"github.com/coinbase/kryptology/pkg/ot/extension/kos"
-	"github.com/coinbase/kryptology/pkg/tecdsa/dkls/v1/dkg"
+	"github.com/brendanjryan/kryptology/pkg/core/curves"
+	"github.com/brendanjryan/kryptology/pkg/ot/base/simplest"
+	"github.com/brendanjryan/kryptology/pkg/ot/extension/kos"
+	"github.com/brendanjryan/kryptology/pkg/tecdsa/dkls/v1/dkg"
 )
 
 // GenerationAndDeal produces private key material for alice and bob which they can later use in signing.

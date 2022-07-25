@@ -9,8 +9,8 @@ package gennaro
 import (
 	"fmt"
 
-	"github.com/coinbase/kryptology/internal"
-	"github.com/coinbase/kryptology/pkg/sharing/v1"
+	"github.com/brendanjryan/kryptology/internal"
+	"github.com/brendanjryan/kryptology/pkg/sharing/v1"
 )
 
 type Round2Bcast = []*v1.ShareVerifier
