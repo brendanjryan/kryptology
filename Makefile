@@ -56,12 +56,10 @@ githooks:
 .PHONY: lint
 lint:
 	${GO} vet ./...
-	golangci-lint run
 
 .PHONY: lint-fix
 lint-fix:
 	${GO} vet ./...
-	golangci-lint run --fix
 
 .PHONY: test
 test:

@@ -24,7 +24,8 @@ import (
 // Participant is a tECDSA player that receives information from a trusted dealer
 type Participant struct {
 	dealer.Share
-	sk *paillier.SecretKey
+	// Creates a participant which can have a secret key.
+	SK *paillier.SecretKey
 }
 
 // Signer is a tECDSA player that holds the additive shares needed for performing the signing operation
@@ -234,7 +235,7 @@ func (p Participant) convertToAdditive(curve elliptic.Curve, publicSharesMap map
 	}
 
 	return &Signer{
-		sk:              p.sk,
+		sk:              p.SK,
 		share:           privateKeyShare,
 		publicSharesMap: additiveMap,
 		Round:           1,
