@@ -304,6 +304,18 @@ type DkgParticipant struct {
 	Round uint
 }
 
+func NewDKGParticipant(id uint32, curve elliptic.Curve, threshold uint32, limit uint32) *DkgParticipant {
+	return &DkgParticipant{
+		id:    id,
+		Curve: curve,
+		Round: 1,
+		state: &dkgstate{
+			Threshold: threshold,
+			Limit:     limit,
+		},
+	}
+}
+
 type dkgParticipantData struct {
 	PublicKey   *paillier.PublicKey
 	ProofParams *dealer.ProofParams
