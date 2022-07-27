@@ -43,8 +43,7 @@ type Signer struct {
 	state     *state // Accumulated intermediate values associated with signing
 }
 
-// NewSigner C=creates a new signer from a dealer-provided output and a specific set of co-signers
-func NewSigner(info *dealer.ParticipantData, cosigners []uint32) (*Signer, error) {
+func NewSignerWithVerifier(info *dealer.ParticipantData, cosigners []uint32, verifier func(*curves.EcPoint, []byte, *curves.EcdsaSignature) bool) (*Signer, error) {
 	// Create the participant
 	p := Participant{*info.SecretKeyShare, info.DecryptKey}
 
@@ -57,13 +56,18 @@ func NewSigner(info *dealer.ParticipantData, cosigners []uint32) (*Signer, error
 	// Convert to additive shares and return the resultx
 	return p.PrepareToSign(
 		info.EcdsaPublicKey,
-		func(*curves.EcPoint, []byte, *curves.EcdsaSignature) bool {
-			return true
-		},
+		verifier,
 		info.EcdsaPublicKey.Curve,
 		info.KeyGenType,
 		chosenOnes,
 		info.EncryptKeys)
+}
+
+// NewSigner C=creates a new signer from a dealer-provided output and a specific set of co-signers
+func NewSigner(info *dealer.ParticipantData, cosigners []uint32) (*Signer, error) {
+	return NewSignerWithVerifier(info, cosigners, func(*curves.EcPoint, []byte, *curves.EcdsaSignature) bool {
+		return true
+	})
 }
 
 // verifyStateMap verifies the round is the expected round number and
